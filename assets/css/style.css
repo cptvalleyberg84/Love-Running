@@ -41,6 +41,19 @@ h1 {
     color: #252525;
 }
 
+/* challenge 2 - style the menu */
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+/* menu text spacing */
+#menu > li {
+    margin-bottom: 1em;
+}
+
+
 /* Main content */
 main {
     background-color: lightblue;
