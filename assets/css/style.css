@@ -134,4 +134,11 @@ main {
     margin-top: 79px;
 }
 
+/*Media Query: Desktops and larger (992px and higher) */
+@media screen and (min-width: 922px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+
+}
 }
