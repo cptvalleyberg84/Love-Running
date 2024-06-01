@@ -225,11 +225,53 @@ main {
     
 }
 
+/* Reasons Section*/
+#benefits-physical, #benefits-mental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#benefits-physical > div, #benefits-mental > div {
+    width: 75%;
+}
+
+#benefits-mental > div {
+    text-align: end;
+    align-self: flex-end;
+}
+
 /*Media Query: Desktops and larger (992px and higher) */
 @media screen and (min-width: 922px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+
+}
+
+/* Media Query: Desktops above 1200px */
+@media screen and (min-width: 1200px) {
+    #benefits {
+
+        display: flex;
+        flex-direction: row;
+            }
+    #benefits > div {
+        flex: 1;
+    }
+    #benefits-image {
+        order: 0 
+    }
+    #benefits-mental {
+        order: 1;
+    }
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
+    #benefits-physical > div {
+        align-self: flex-end;
+    }
+
 
 }
 }
