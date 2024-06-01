@@ -240,10 +240,14 @@ main {
 }
 
 .text-input {
-    background-color: rgba(255, 255, 255, 0.6);
+    background: transparent;
+    color:#fafafa;
+    width: 100%;
+    height: 25px;
+
     border: 1px solid #fafafa;
     border-radius: 2px;
-    padding: 0 5px 0;
+    padding: 0 5px;
     margin: 5px 0 20px 0;
 }
 
@@ -251,8 +255,6 @@ main {
     justify-content: space-between;
     display: flex;
     width: 100%;
-
-
 }
 
 .join-button {
@@ -356,12 +358,13 @@ main {
 /* Signup Form */
 #signup {
     background-position: center;
-    position: absolute;
+    position: relative;
 }
 
 #signup-form {
     position: absolute;
-    margin: 150px 0 0 10%;
+    left: 10%;
+    top: 150px ;
     max-width: 400px;
 
 }
