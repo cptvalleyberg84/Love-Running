@@ -204,7 +204,7 @@ main {
 #photos img {
     width: 100%;
     line-height: 1em;
-    
+
 
 }
 
@@ -225,6 +225,14 @@ main {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+}
+
+/* Media query: large or landsacpe phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
 }
 
 /*Media Query: tablets and larger (768px and up) */
@@ -256,6 +264,7 @@ main {
         margin: 0 0.5rem ;
 
     }
+
 /* Main Content */
 main {
     /*push main content down to accomodate larger header */
@@ -285,11 +294,23 @@ main {
     align-self: flex-end;
 }
 
+/* Gallery */
+
+#photos {
+    column-count: 3;
+}
+
+}
 /*Media Query: Desktops and larger (992px and higher) */
 @media screen and (min-width: 922px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+/* Gallery */
+
+#photos {
+    column-count: 4;
+}
 
 }
 
@@ -317,5 +338,4 @@ main {
     }
 
 
-}
 }
